@@ -1,0 +1,57 @@
+.login-page {
+    position: relative;
+    height: 100vh;
+    background: url('./images/banner.png') no-repeat center center/cover;
+    width:590%;
+  }
+  
+  
+  .login-container {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:auto ;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px rgba(56, 30, 4, 0.2);
+  }
+  
+  .login-container h2 {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  
+  .form-group {
+    padding: 18px;
+    width:auto
+  }
+  
+  .form-group input {
+    height:55px;
+    width:290px;
+  }
+  
+  .submitButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #675222;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .links a {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 15px;
+  }
+  
+  .links a:hover {
+    color: blue;
+  }
+  

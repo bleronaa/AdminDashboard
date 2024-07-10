@@ -5,13 +5,17 @@ import
  from 'react-icons/bs'
  import { PiPaintBrushDuotone } from "react-icons/pi";
  import { TiContacts } from "react-icons/ti";
+import Logo from '../src/images/imglogo.png';
+
 
 function Sidebar({openSidebarToggle, OpenSidebar}) {
   return (
     <aside id="sidebar" className={openSidebarToggle ? "sidebar-responsive": ""}>
         <div className='sidebar-title'>
             <div className='sidebar-brand'>
-                <BsCart3  className='icon_header'/> SHOP
+                <img src={Logo} className='icon_header'/> 
+               
+               
             </div>
             <span className='icon close_icon' onClick={OpenSidebar}>X</span>
         </div>
