@@ -28,7 +28,7 @@ function Sidebar({openSidebarToggle, OpenSidebar}) {
             </li>
             <li className='sidebar-list-item'>
                 <a href="">
-                    <PiPaintBrushDuotone className='icon'/> Paintings
+                    <PiPaintBrushDuotone className='icon'/> Auctions
                 </a>
             </li>
             <li className='sidebar-list-item'>
