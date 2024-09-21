@@ -1,0 +1,216 @@
+{
+    "homeData": [
+      {
+        "id": 1,
+        "name": "Background",
+        "url": "https://m.media-amazon.com/images/I/81mfTJLkBLL._AC_UF894,1000_QL80_DpWeblab_.jpg",
+        "text": "Unlock Masterpieces, Bid with Passion!"
+      },
+      {
+        "id": 2,
+        "name": "Slider",
+        "url": "https://psmag.com/.image/t_share/MTI3NTgyNDAxNjE3NDk5NDEw/painting.jpg",
+        "text": "Unlock Masterpieces, Bid with Passion!"
+      }
+    ],
+    "categories":[
+      {
+        "painting":"https://m.media-amazon.com/images/I/91y9IrbmrTL._AC_UF1000,1000_QL80_.jpg",
+        "date":"24.06.2024",
+        "location": "Prizren"
+
+      },
+      {
+        "fineArtPrints":"https://oliveetoriel.com/cdn/shop/files/This-Land-I-By-Wild-Apple---Hero-shot_grande.jpg?v=1698924029",
+        "date":"05.07.2024",
+        "location": "Tirane"
+
+      },
+      {
+        "sculpture":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpVwv3QNQw5VnY-hekTtpw0OyKUnbDzo9KTQ&s",
+        "date":"03.07.2024",
+        "location": "Prishtine"
+      }
+    ],
+    "imageCarousel": [
+      {
+        "id": 1,
+        "name": "Background",
+        "url": "https://render.fineartamerica.com/images/rendered/medium/framed-print/images-medium-5/the-hiding-place-joshua-smith.jpg?imgWI=16&imgHI=20&sku=CRQ13&mat1=PM918&mat2=&t=2&b=2&l=2&r=2&off=0.5&frameW=0.875",
+        "text": "Unlock Masterpieces, Bid with Passion!",
+        "estimate": "40,000-60,000 EU",
+        "price":"980 Euro",
+        "button": "Bid",
+        "buybutton":"Buy",
+        "location": "Prishtine",
+        "category": "Painting",
+        "artist":"Blerona Tmava"
+      },
+      {
+        "id": 2,
+        "name": "Slider",
+        "url": "https://www.finearttips.com/wp-content/uploads/2010/05/monet_umbrella.jpg",
+        "text": "Unlock Masterpieces, Bid with Passion!",
+        "estimate": "20,000-30,000 EU",
+        "price":"1400 Euro",
+        "button": "Bid",
+        "buybutton":"Buy",
+        "location": "Tirane",
+        "category": "Painting",
+        "artist":"Blerona Tmava"
+
+      },
+      {
+        "id": 3,
+        "name": "Slider",
+        "url": "https://www.finearttips.com/wp-content/uploads/2010/05/monet_umbrella.jpg",
+        "text": "Unlock Masterpieces, Bid with Passion!",
+        "estimate": "3000-6000EU",
+        "price":"2130 Euro",
+        "button": "Bid",
+        "buybutton":"Buy",
+        "location": "Peje",
+        "category": "Fine Art Prints",
+        "artist":"Blerona Tmava"
+
+      },
+      {
+        "id": 4,
+        "name": "Slider",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Kan%C5%8D_Sansetsu_-_Frolicking_Birds_in_Plum_and_Willow_Trees.jpg/800px-Kan%C5%8D_Sansetsu_-_Frolicking_Birds_in_Plum_and_Willow_Trees.jpg",
+        "text": "Unlock Masterpieces, Bid with Passion!",
+        "estimate": "40,000-60,000 EU",
+        "price":"1230 Euro",
+        "button": "Bid",
+        "buybutton":"Buy",
+        "location": "Gjakove",
+        "category": "Painting",
+        "artist":"Blerona Tmava"
+
+      },
+      {
+        "id": 5,
+        "name": "Background",
+        "url": "https://render.fineartamerica.com/images/rendered/medium/framed-print/images-medium-5/the-hiding-place-joshua-smith.jpg?imgWI=16&imgHI=20&sku=CRQ13&mat1=PM918&mat2=&t=2&b=2&l=2&r=2&off=0.5&frameW=0.875",
+        "text": "Unlock Masterpieces, Bid with Passion!",
+        "estimate": "10,000-20,000 EU",
+        "price":"2450 Euro",
+        "button": "Bid",
+        "buybutton":"Buy",
+        "location": "Shkoder",
+        "category": "Sculpture",
+        "artist":"Blerona Tmava"
+
+      }
+    ],
+    "NewDiscoveries": [
+        {
+          "id": 1,
+          "name": "item1",
+          "url": "https://emmahiggins.ie/wp-content/uploads/2022/02/Blackstairs-WM.jpg",
+          "text": "Blackstairs sunset",
+          "estimate": "10,000-20,000 Eu",
+          "price":"1800 Euro",
+          "location": "Prishtine",
+          "origin":"Kosove",
+          "category": "Painting",
+          "button": "Bid",
+          "buybutton":"Buy",
+          "description": "Blackstairs Sunset depicts the stunning beauty of the Blackstairs Mountains bathed in the warm hues.",
+          "height":"17.75 inches/ 45.09 cm",
+          "width":"14.75 inches/ 37.47 cm",
+          "auction":"opened"         
+        },
+        {
+          "id": 2,
+          "name": "item2",
+          "url": "https://paintings.kraneil.com/wp-content/uploads/2023/01/seascape2022-scaled.jpg",
+          "text": "Ocean Painting",
+          "price":"2300 Euro",
+          "estimate": "10,000-20,000 Eu",
+          "location": "Tirane",
+          "origin":"Albania",
+          "category": "Fine Art Prints",
+          "buybutton":"Buy",
+          "button": "Bid",
+         "description": "Ocean Painting portrays the vast expanse of the ocean, capturing its ever-changing moods and colors. ",
+          "height":"17.75 inches/ 45.09 cm",
+          "width":"14.75 inches/ 37.47 cm",
+          "auction":"opened"
+
+        },
+        {
+          "id": 3,
+          "name": "item3",
+          "url": "https://i.etsystatic.com/21806975/r/il/9589f2/4446367707/il_570xN.4446367707_hrts.jpg",
+          "text": "Violin",
+          "estimate": "8,000-9,000 Eu",
+          "price":"4000 Euro",
+          "location": "Shkoder",
+          "origin":"Albania",
+          "category": "Sculpture",
+          "buybutton":"Buy",
+          "button": "Bid",
+          "description": "A violin is a string instrument known for its rich and expressive sound.It typically has four strings stretched.  ",
+           "height":"17.75 inches/ 45.09 cm",
+          "width":"14.75 inches/ 37.47 cm",
+          "auction":"upcoming"
+
+        },
+        {
+          "id": 4,
+          "name": "item4",
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyBolqFhPhPwjflG_oLzAonJlmX3x2_cWM8GtI5DTYQ&s",
+          "text": "Mountain Landscape",
+          "estimate": "10,000-25,000 Eu",
+          "price":"1300 Euro",
+          "location": "Gjakove",
+          "origin":"Kosove",
+          "category": "Painting",
+          "buybutton":"Buy",
+          "button": "Bid",
+         "description": " These landscapes capture the rugged beauty, grandeur, and tranquility of mountainous regions. ",
+          "height":"17.75 inches/ 45.09 cm",
+          "width":"14.75 inches/ 37.47 cm",
+          "auction":"upcoming"
+
+        },
+        {
+          "id": 5,
+          "name": "item5",
+          "url": "https://cdn.britannica.com/44/95844-050-877F3787/Lauerzersee-Schwyz-watercolour-ink-pencil-pen-paper-1848.jpg",
+          "text": "Landscape",
+          "estimate": "10,000-20,000 Eu",
+          "price":"2300 Euro",
+          "location": "Vlore",
+          "origin":"Albania",
+          "category": "Painting",
+          "buybutton":"Buy",
+          "button": "Bid",
+         "description": "It often includes elements such as mountains, valleys, rivers, forests, and skies, portraying a wide range of environments and atmospheres.",
+          "height":"17.75 inches/ 45.09 cm",
+          "width":"14.75 inches/ 37.47 cm",
+          "auction":"upcoming"
+
+        },
+        {
+          "id": 6,
+          "name": "item6",
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6CYidfYBc_g9e8lKYH9Jo_oJ2-DyANICLg_sJcozb5w&s",
+          "text": "Seascape",
+          "estimate": "10,000-20,000 Eu",
+          "price":"1500 Euro",
+          "location": "Prizren",
+          "origin":"Kosove",
+          "category": "Fine Art Prints",
+          "buybutton":"Buy",
+          "button": "Bid",
+         "description": "The azure expanse of the ocean stretches endlessly to meet the horizon, where the sky melds seamlessly with the water in a symphony of blues.",
+          "height":"17.75 inches/ 45.09 cm",
+          "width":"14.75 inches/ 37.47 cm",
+          "auction":"opened"
+
+        }
+      ]
+  }
+  

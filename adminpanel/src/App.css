@@ -9,7 +9,7 @@ body {
 .icon {
   vertical-align: middle;
   line-height: 1px;
-  font-size: 20px;
+  font-size: 30px;
 }
 .icon_header {
   vertical-align: middle;
@@ -21,10 +21,12 @@ body {
 }
 
 .close_icon {
-  color: red;
+  position: relative;
+  bottom: 35px;
+  color:black;
   margin-left: 30px;
-  margin-top: 10px;
   cursor: pointer;
+  font-size: 30px;
 }
 
 .grid-container {
@@ -46,6 +48,9 @@ body {
   justify-content: space-between;
   padding: 0 30px 0 30px;
   box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
+}
+.header-right{
+  margin-left: auto;
 }
 
 .menu-icon {
@@ -233,6 +238,14 @@ body {
     grid-template-columns: 1fr;
     margin-top: 30px;
   }
+  .header-right {
+    margin-left: 0; /* Reset margin */
+    margin-right: 30px; /* Align to the right on small screens */
+    display: flex;
+    justify-content: flex-end; /* Aligns icon to the right */
+    flex-grow: 1; /* Allows it to grow and push content */
+  }
+  
 }
 
 /* Extra Small <= 576px */

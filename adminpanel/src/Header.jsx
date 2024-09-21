@@ -1,18 +1,17 @@
-import React from 'react'
-import {BsFillBellFill,BsFillEnvelopeFill, BsPersonCircle,BsSearch,BsJustify } from 'react-icons/bs';
+import React from 'react';
+import { BsFillBellFill, BsFillEnvelopeFill, BsPersonCircle, BsSearch, BsJustify, BsX } from 'react-icons/bs';
 
-
-const Header = () => {
+const Header = ({ openSidebarToggle, OpenSidebar }) => {
   return (
     <header className='header'>
-      <div className='menu-icon'>
-        <BsJustify className='icon'/>
+      <div className='menu-icon' onClick={OpenSidebar}>
+        {openSidebarToggle ? <BsX className='icon' /> : <BsJustify className='icon' />}
       </div>
       <div className='header-right'>
-        <BsPersonCircle className='icon'/>
+        <BsPersonCircle className='icon' />
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
