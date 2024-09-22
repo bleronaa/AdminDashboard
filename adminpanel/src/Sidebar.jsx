@@ -13,6 +13,7 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
 };
 
   return (
+
     <aside id="sidebar" className={openSidebarToggle ? "sidebar sidebar-responsive" : "sidebar"}>
       <div className='sidebar-title'>
         <div className='sidebar-brand'>
@@ -29,23 +30,23 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
           </Link>
         </li>
         <li className='sidebar-list-item'>
-          <Link to="#" onClick={handleClick}>
+          <Link to="/Auctions" onClick={handleClick}>
             <PiPaintBrushDuotone className='icon' /> Auctions
           </Link>
         </li>
         <li className='sidebar-list-item'>
-          <Link to="/ApproveArtItems" onClick={handleClick}>
+          <Link to="/artItems" onClick={handleClick}>
             <PiPaintBrushDuotone className='icon' /> Art Items
           </Link>
         </li>
         <li className='sidebar-list-item'>
-          <Link to="#" onClick={handleClick}>
-            <TiContacts className='icon' /> Contact
+          <Link to="/Categories" onClick={handleClick}>
+            <TiContacts className='icon' /> Categories
           </Link>
         </li>
         <li className='sidebar-list-item'>
-          <Link to="#" onClick={handleClick}>
-            <BsPeopleFill className='icon' /> Admin
+          <Link to="/Users" onClick={handleClick}>
+            <BsPeopleFill className='icon' /> Users
           </Link>
         </li>
         <li className='sidebar-list-item'>

@@ -1,0 +1,21 @@
+.adduser {
+    margin: 0 auto;  
+    width: 50%;
+  }
+  .addAuctionButton {
+    display: inline-flex; /* To align icon and text */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    padding: 5px 10px; /* Adjust padding */
+    border: 2px solid black; /* Border style */
+    color: black; /* Default text color */
+    background-color: transparent; /* Default background */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  }
+  
+  .addAuctionButton:hover {
+    background-color: #bba660; /* Hover background color */
+    color: black; /* Hover text color */
+  }

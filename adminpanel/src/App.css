@@ -9,7 +9,7 @@ body {
 .icon {
   vertical-align: middle;
   line-height: 1px;
-  font-size: 30px;
+  font-size: 20px;
 }
 .icon_header {
   vertical-align: middle;
@@ -97,7 +97,8 @@ body {
 
 .sidebar-list-item {
   padding: 20px 20px 20px 20px;
-  font-size: 18px;
+  font-size: 14px;
+  display: flex;
 }
 
 .sidebar-list-item:hover {
@@ -108,6 +109,7 @@ body {
 .sidebar-list-item > a {
   text-decoration: none;
   color: black;
+  display: flex;
 }
 
 .sidebar-responsive {

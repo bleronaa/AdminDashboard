@@ -3,9 +3,18 @@ import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-rou
 import Header from './Header';
 import Sidebar from './Sidebar';
 import Home from './Home';
-import ApproveArtItems from './ApproveArtItems';
+import ApproveArtItems from './ArtItems';
 import './App.css';
-import './index.css';
+import './index.css'; // Import Tailwind styles last
+import Users from './Users';
+import Auctions from './Auctions';
+import AddAuctions from './AddAuction';
+import AddUsers from './AddUser';
+import AddCategories from './AddCategories';
+import Categories from './Categories';
+import ArtItems from './ArtItems';
+
+
 
 function App() {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false);
@@ -23,7 +32,19 @@ function App() {
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="*" element={<Home />} />
-          <Route path="/ApproveArtItems" element={<ApproveArtItems/>}/>
+          <Route path="/artItems" element={<ArtItems/>}/>
+          <Route path="/Users" element={<Users/>}/>
+          <Route path="/Auctions" element={<Auctions/>}/>
+          <Route path="/addAuction" element={<AddAuctions/>}/>
+          <Route path="/addUser" element={<AddUsers/>}/>
+          <Route path="/addCategory" element={<AddCategories/>}/>
+          <Route path="/Categories" element={<Categories/>}/>
+
+
+
+
+
+
         </Routes>
       </div>
     </BrowserRouter>
