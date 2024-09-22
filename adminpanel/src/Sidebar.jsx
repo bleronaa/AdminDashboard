@@ -1,19 +1,29 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState } from 'react';
 import { BsGrid1X2Fill, BsPeopleFill, BsFillGearFill } from 'react-icons/bs';
 import { PiPaintBrushDuotone } from 'react-icons/pi';
 import { TiContacts } from 'react-icons/ti';
 import { Link } from 'react-router-dom'; // Import Link
 import Logo from '../src/images/imglogo.png';
-
+import './Sidebar.css';
 function Sidebar({ openSidebarToggle, OpenSidebar }) {
   const [click, setClick] = useState(false);
+  const [selectedOption, setSelectedOption] = useState('');
 
   const handleClick = () => {
     setClick(!click);
-};
+  };
+
+  const handleSelectChange = (e) => {
+    setSelectedOption(e.target.value);
+    // Redirekto në bazë të opsionit të zgjedhur
+    if (e.target.value === "clientList") {
+      window.location.href = "/clientList"; // Ose përdor <Link> për të kaluar në rrugë
+    } else if (e.target.value === "addAdmin") {
+      window.location.href = "/addAdmin"; // Ose përdor <Link> për të kaluar në rrugë
+    }
+  };
 
   return (
-
     <aside id="sidebar" className={openSidebarToggle ? "sidebar sidebar-responsive" : "sidebar"}>
       <div className='sidebar-title'>
         <div className='sidebar-brand'>
@@ -45,9 +55,14 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
           </Link>
         </li>
         <li className='sidebar-list-item'>
-          <Link to="/Users" onClick={handleClick}>
-            <BsPeopleFill className='icon' /> Users
-          </Link>
+          <div className='styled-select slate'style={{display:'flex'}}>
+            <BsPeopleFill className='icon' /> 
+            <select value={selectedOption} onChange={handleSelectChange} className="user-select">
+              <option className='option'><BsPeopleFill className='icon' /> Users</option>
+              <option value="clientList" className='option'>Client List</option>
+              <option value="addAdmin" className='option'>Add Admin</option>
+            </select>
+          </div>
         </li>
         <li className='sidebar-list-item'>
           <Link to="#" onClick={handleClick}>

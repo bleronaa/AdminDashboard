@@ -1,0 +1,17 @@
+.styled-select select {
+    display: flex !important;
+    background-color: transparent;
+ }
+
+ .user-select{
+    color: black;
+ }
+
+ .user-select {
+    padding: 5px;
+    border-radius: 4px;
+    width: 200px;
+  }
+  option {
+    padding: 30px !important; 
+  }
