@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import './Order.css';
+import './index.css'
 import data from './data.json';
 import Footer from './Footer';
 

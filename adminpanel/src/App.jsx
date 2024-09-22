@@ -5,6 +5,7 @@ import Sidebar from './Sidebar';
 import Home from './Home';
 import ApproveArtItems from './ApproveArtItems';
 import './App.css';
+import './index.css';
 
 function App() {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false);
