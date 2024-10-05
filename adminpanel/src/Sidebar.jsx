@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { BsGrid1X2Fill, BsPeopleFill, BsFillGearFill } from 'react-icons/bs';
 import { PiPaintBrushDuotone } from 'react-icons/pi';
 import { TiContacts } from 'react-icons/ti';
@@ -10,7 +10,7 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
 
   const handleClick = () => {
     setClick(!click);
-};
+  };
 
   return (
 
