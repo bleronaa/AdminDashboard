@@ -1,4 +1,3 @@
-import * as React from 'react';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -9,19 +8,38 @@ import Paper from '@mui/material/Paper';
 import AddIcon from '@mui/icons-material/Add';
 import ModeEditIcon from '@mui/icons-material/ModeEdit';
 import DeleteIcon from '@mui/icons-material/Delete';
+import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import axiosInstance from './Axios';
+import { toast } from 'react-toastify';
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
-}
 
-const rows = [
-  createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-
-];
 
 
 
 const Categories = () => {
+  
+const [categories, setCategories] = useState([]);
+
+useEffect(() => {
+  const fetchCategories = async () => {
+    try {
+      const response = await axiosInstance.get('/Category/getCategoryList');
+      console.log('res',response.data)
+      setCategories(response.data); // Assuming data is a list of categories
+    } catch (error) {
+      console.error('Error fetching categories:', error);
+      toast.error('Failed to fetch categories');
+    }
+  };
+
+  fetchCategories();
+}, []);
+const navigate=useNavigate();
+
+  const redirectToEdit = async (id) => {
+    navigate(`/editCategory/${id}`)
+}
     return (
         <main className='main-container'>
     <div className='addAuction' style={{ width: '100%', display: 'flex', justifyContent: 'end', textAlign: 'center' }}>
@@ -34,23 +52,27 @@ const Categories = () => {
             <TableHead style={{backgroundColor:'#f1eee4'}}>
               <TableRow>
                 <TableCell>Category Name</TableCell>
-                <TableCell align="right">Category Description</TableCell>
-                <TableCell align="right">Created On</TableCell>
-                <TableCell align="right">Action</TableCell>
+                <TableCell >Category Description</TableCell>
+                <TableCell >Created On</TableCell>
+                <TableCell align='right' >Action</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
-              {rows.map((row) => (
+              {categories.map((row) => (
                   <TableRow
-                  key={row.name}
+                  key={row.categroyId}
                   sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                 >
                   <TableCell >
-                    {row.name}
+                    {row.categoryName}
                   </TableCell>
-                  <TableCell align="right">{row.calories}</TableCell>
-                  <TableCell align="right">{row.fat}</TableCell>
-                  <TableCell align="right"><ModeEditIcon style={{color:'blue'}} />  <DeleteIcon style={{color:'red'}}/></TableCell>
+                  <TableCell >{row.categoryDescription}</TableCell>
+                  <TableCell >{new Date(row.createdOn).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                  })} </TableCell>
+                  <TableCell align='right'><ModeEditIcon onClick={()=>redirectToEdit(row.categroyId)} style={{color:'#808080',cursor:'pointer'}}  />  <DeleteIcon style={{color:'#EA5B60',cursor:'pointer'}} /></TableCell>
                 </TableRow>
               ))}
             </TableBody>

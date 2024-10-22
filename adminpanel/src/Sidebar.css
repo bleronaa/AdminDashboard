@@ -15,3 +15,37 @@
   option {
     padding: 30px !important; 
   }
+
+  .users{
+   flex-direction: column;
+   margin-left: 40px;
+  }
+  .users > li{
+   margin-left: 10px;
+   padding-bottom: 10px;
+  }
+
+  .arrow-icon {
+   margin-left: 4px; 
+   margin-top: 3px;
+   transition: transform 0.3s ease; 
+ }
+ 
+ .arrow-icon.rotate {
+   transform: rotate(180deg); 
+ }
+ 
+ /* Toggleable users div */
+ .users {
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height 0.3s ease; /* Smooth slide down/up */
+ }
+ 
+ .users.open {
+   max-height: 200px; 
+ }
+ 
+ .users.closed {
+   max-height: 0; 
+ }

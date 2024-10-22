@@ -11,6 +11,13 @@
   border-radius: 10px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
+.preloader {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  height: 100%;            /* Full height of the parent */
+  width: 250% !important;             /* Full width of the parent */
+}
 
 .order-image {
   flex: 1;
