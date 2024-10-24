@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 import axiosInstance from "./Axios";
+import './Login.css'
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -34,7 +35,7 @@ export default function Login() {
   return (
     <main className="main-container">
       <div className="font-sans text-gray-900 antialiased">
-        <div className="min-h-screen flex flex-col sm:justify-center items-center  sm:pt-0 bg-[#f8f4f3]">
+        <div className=" min-h-screen flex flex-col sm:justify-center items-center  sm:pt-0 bg-[#f8f4f3]">
           <div>
             <a href="/">
               <h2 className="font-bold text-3xl">

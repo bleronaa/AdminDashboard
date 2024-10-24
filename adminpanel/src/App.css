@@ -10,6 +10,7 @@ body {
   vertical-align: middle;
   line-height: 1px;
   font-size: 20px;
+  cursor:pointer;
 }
 .icon_header {
   vertical-align: middle;
@@ -18,6 +19,23 @@ body {
 }
 .icon, .icon_header {
   margin-right: 5px;
+}
+.dropdown {
+  position: absolute;
+  top: 100%; /* Position the dropdown right under the icon */
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000; 
+  width: 90px;
+}
+.dropdown-item:hover{
+  color: red;
+}
+.dropdown-item{
+  color: black;
 }
 
 .close_icon {
@@ -51,6 +69,7 @@ body {
 }
 .header-right{
   margin-left: auto;
+  position: relative;
 }
 
 .menu-icon {

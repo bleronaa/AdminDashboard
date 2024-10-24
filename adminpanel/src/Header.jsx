@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BsPersonCircle, BsJustify, BsX } from 'react-icons/bs'; // Ensure you import these
 import { useNavigate } from 'react-router-dom'; // To redirect after logging out
+import './App.css';
 
 function Header({ openSidebarToggle, OpenSidebar }) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -27,7 +28,7 @@ function Header({ openSidebarToggle, OpenSidebar }) {
         <BsPersonCircle className='icon' onClick={toggleDropdown} />
         {isDropdownOpen && token && (
           <div className='dropdown'>
-            <button onClick={handleLogout} className='dropdown-item'>
+            <button onClick={handleLogout} className='dropdown-item' >
               Log out
             </button>
           </div>

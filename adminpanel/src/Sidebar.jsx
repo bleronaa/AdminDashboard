@@ -64,7 +64,7 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
           </Link>
         </li>
         <li className='sidebar-list-item' style={{padding:'5px'}}>
-          <Link className='sidebar-link' to="/clients" onClick={showList}>
+          <Link className='sidebar-link' to="/Clients" onClick={showList}>
             <TiContacts className='icon' /> Client List
           </Link>
         </li>

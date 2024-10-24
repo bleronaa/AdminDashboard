@@ -54,4 +54,15 @@
   .links a:hover {
     color: blue;
   }
-  
+  @media (min-width:640px){
+    .sm\:pt-0{
+      margin-top: -160px !important;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  @media (min-width:1699px){
+    .sm\:pt-0{
+      margin-right:300px;
+    }
+  }
