@@ -31,6 +31,12 @@ body {
   z-index: 1000; 
   width: 90px;
 }
+.dropdown-item:hover{
+  color: red;
+}
+.dropdown-item{
+  color: black;
+}
 
 .close_icon {
   position: relative;
