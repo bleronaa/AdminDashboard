@@ -120,6 +120,7 @@ body {
   display: flex;
 }
 
+
 .sidebar-list-item:hover {
   background-color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
