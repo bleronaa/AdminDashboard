@@ -4,6 +4,7 @@ import Header from './Header';
 import Sidebar from './Sidebar';
 import Home from './Home';
 import ArtItems from './ArtItems';
+import Clients from './Clients';
 import Users from './Users';
 import Auctions from './Auctions';
 import AddAuctions from './AddAuction';
@@ -34,6 +35,7 @@ function MainContent({ openSidebarToggle, OpenSidebar }) {
         <Route path="/home" element={<Home />} />
         <Route path="/artItems" element={<ArtItems />} />
         <Route path="/Users" element={<Users />} />
+        <Route path="/Clients"element={<Clients/>}/>
         <Route path="/Auctions" element={<Auctions />} />
         <Route path="/addAuction" element={<AddAuctions />} />
         <Route path="/addUser" element={<AddUsers />} />
