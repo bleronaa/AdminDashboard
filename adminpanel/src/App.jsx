@@ -15,6 +15,7 @@ import EditCategory from './EditCategory';
 import Login from './Login';
 import './App.css';
 import './index.css'; // Import Tailwind styles last
+import ArtItemDetails from './ArtItemsDetails';
 
 function MainContent({ openSidebarToggle, OpenSidebar }) {
   const location = useLocation();
@@ -41,6 +42,8 @@ function MainContent({ openSidebarToggle, OpenSidebar }) {
         <Route path="/Categories" element={<Categories />} />
         <Route path="/editAuction/:auctionId" element={<EditAuction />} />
         <Route path="/editCategory/:categoryId" element={<EditCategory />} />
+        <Route path="/artitemdetails/:artItemId" element={<ArtItemDetails />}/>
+
         {/* Render Login without sidebar */}
         <Route path="/Login" element={<Login />} />
         {/* Default to Login for any unmatched route */}
